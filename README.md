@@ -1,2 +1,0 @@
-# MTGExplorer
-Created with CodeSandbox
