@@ -2,7 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import Card from './Card';
-import Helloworld from './Helloworld';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -12,7 +11,6 @@ const styles = {
 const App = () => (
   <div style={styles}>
     <Hello name="MTG Explorer" />
-    <Helloworld name="MTG Explorer" />
     <Card 
       name="Charging Monstrosaur" 
       image="https://img.scryfall.com/cards/large/en/xln/138.jpg"
@@ -48,7 +46,6 @@ const App = () => (
       power="3"
       toughness="3"
     />
-    <h2>Start editing to see some magic happen {'\u2728'}</h2>
   </div>
 );
 
