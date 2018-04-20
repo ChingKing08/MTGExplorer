@@ -2,11 +2,18 @@ import React from 'react';
 import CardImage from './CardImage';
 import CardDetails from './CardDetails';
 
-export default ({ name, image, type, subtype, trigger, text, flavortext, cost, power, toughness }) => <div> 
-                              <hr />
-                              <table><tr><td>
-                              <CardImage name={name} image={image} />
-                              </td><td align="left" valign="top">
-                              <CardDetails name={name} type={type} subtype={subtype} trigger={trigger} text={text} flavortext={flavortext} cost={cost} power={power} toughness={toughness} />
-                              </td></tr></table> 
-                              </div>;
+class Card extends React.Component {
+  render() {
+    return (
+      <div>
+        <hr />
+        <table><tr><td>
+          <CardImage name={this.props.name} image={this.props.image} />
+        </td><td align="left" valign="top">
+            <CardDetails name={this.props.name} type={this.props.type} subtype={this.props.subtype} trigger={this.props.trigger} text={this.props.text} flavortext={this.props.flavortext} cost={this.props.cost} power={this.props.power} toughness={this.props.toughness} />
+          </td></tr></table>
+      </div>);
+  }
+}
+
+export default Card;

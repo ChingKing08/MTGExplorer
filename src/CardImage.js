@@ -1,5 +1,12 @@
 import React from 'react';
 
-export default ({ name, image }) => <div>
-    <img alt={name} width="250px" src={image} />
-</div>;
+class CardImage extends React.Component {
+  render() {
+    return (
+      <div>
+        <img alt={this.props.name} width="250px" src={this.props.image} />
+      </div>);
+    }
+}
+
+export default CardImage;

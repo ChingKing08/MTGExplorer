@@ -1,5 +1,12 @@
 import React from 'react';
 
-export default ({ type, subtype }) => <div>
-                                       <b>{type} - {subtype}</b>
-                                      </div>;
+class CardType extends React.Component {
+  render() {
+    return (
+      <div>
+        <b>{this.props.type} - {this.props.subtype}</b>
+      </div>);
+  }
+}
+
+export default CardType;

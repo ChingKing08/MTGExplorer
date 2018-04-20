@@ -1,14 +1,21 @@
 import React from 'react';
 import CardText from './CardText';
 import CardType from './CardType';
+import CardManaCost from './CardManaCost';
 
-export default ({ name, type, subtype, trigger, text, flavortext, cost, power, toughness }) => 
-  <div align="left" valign="top" >
-        <h2>{name}  {cost}</h2> 
+class CardDetails extends React.Component {
+  render() {
+    return (
+      <div align="left" valign="top" >
+        <h2>{this.props.name}  {this.props.cost}  <CardManaCost /></h2>
         <hr />
-        <CardType type={type} subtype={subtype} />
+        <CardType type={this.props.type} subtype={this.props.subtype} />
         <hr />
-        <CardText trigger={trigger} text={text} flavortext={flavortext} />
+        <CardText trigger={this.props.trigger} text={this.props.text} flavortext={this.props.flavortext} />
         <hr />
-        <b>{power}/{toughness}</b>
-</div>;
+        <b>{this.props.power}/{this.props.toughness}</b>
+      </div>);
+  }
+}
+
+export default CardDetails;
