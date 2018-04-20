@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import Card from './Card';
+import Helloworld from './Helloworld';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -11,6 +12,7 @@ const styles = {
 const App = () => (
   <div style={styles}>
     <Hello name="MTG Explorer" />
+    <Helloworld name="MTG Explorer" />
     <Card 
       name="Charging Monstrosaur" 
       image="https://img.scryfall.com/cards/large/en/xln/138.jpg"
@@ -40,7 +42,7 @@ const App = () => (
       type="Legendary Creature"
       subtype="Human Pirate"
       trigger=""
-      text="Other Pirates you control get +1/+1.\nAt the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn."
+      text="Other Pirates you control get +1/+1.~At the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn."
       flavortext="&quot;You and your ship will make a fine addition to my fleet.&quot;"
       cost="1UBR"
       power="3"
