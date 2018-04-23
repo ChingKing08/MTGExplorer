@@ -16,7 +16,14 @@ class CardManaCost extends React.Component {
 
   _convertManaCost() {
     var text = "1UBR";
-    text = text.replace('1', 'U');
+    
+    text = text.replace('W', '~W~');
+    text = text.replace('U', '~U~');
+    text = text.replace('B', '~B~');
+    text = text.replace('R', '~R~');
+    text = text.replace('G', '~G~');
+
+
     return <div>{text}</div>
   }
 
