@@ -7,7 +7,7 @@ class CardDetails extends React.Component {
   render() {
     return (
       <div align="left" valign="top" >
-        <h2>{this.props.name}  {this.props.cost}  <CardManaCost /></h2>
+        <h2>{this.props.name} <CardManaCost cost={this.props.cost}/></h2>
         <hr />
         <CardType type={this.props.type} subtype={this.props.subtype} />
         <hr />
