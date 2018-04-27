@@ -13,26 +13,46 @@ class CardManaCost extends React.Component {
     text = text.replace(/B/g, "~B~");
     text = text.replace(/R/g, "~R~");
     text = text.replace(/G/g, "~G~");
+    text = text.replace(/1/g, "~1~");
+    text = text.replace(/2/g, "~2~");
+    text = text.replace(/3/g, "~3~");
+    text = text.replace(/4/g, "~4~");
 
     text = text.replace(
       /~W~/g,
-      '<img width="25px" src="https://vignette.wikia.nocookie.net/mtg/images/d/da/Mana_W.png/revision/latest?cb=20130604114009" />'
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-w.png />'
     );
     text = text.replace(
       /~U~/g,
-      '<img width="25px" src="https://vignette.wikia.nocookie.net/mtg/images/a/a8/Mana_U.png/revision/latest?cb=20130604114015" />'
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-u.png" />'
     );
     text = text.replace(
       /~B~/g,
-      '<img width="25px" src="https://vignette.wikia.nocookie.net/mtg/images/a/a6/Mana_B.png/revision/latest?cb=20130604114019" />'
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-b.png" />'
     );
     text = text.replace(
       /~R~/g,
-      '<img width="25px" src="https://vignette.wikia.nocookie.net/mtg/images/c/ce/Mana_R.png/revision/latest?cb=20130604114022" />'
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-r.png" />'
     );
     text = text.replace(
       /~G~/g,
-      '<img width="25px" src="https://vignette.wikia.nocookie.net/mtg/images/f/f7/Mana_G.png/revision/latest?cb=20130604114032" />'
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-g.png" />'
+    );
+    text = text.replace(
+      /~1~/g,
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-1.png" />'
+    );
+    text = text.replace(
+      /~2~/g,
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-2.png" />'
+    );
+    text = text.replace(
+      /~3~/g,
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-3.png" />'
+    );
+    text = text.replace(
+      /~4~/g,
+      '<img width="25px" src="https://raw.githubusercontent.com/scryfall/manamoji-slack/master/emojis/mana-4.png" />'
     );
 
     return (
